@@ -48,7 +48,7 @@ func main() {
 	flag.StringVar(&projectID, "project", "", "the ID of the GCP project to use")
 	flag.StringVar(&source, "source", "", "the path to the source")
 	flag.StringVar(&name, "name", "", "the name of the file to be stored on GCS")
-	flag.BoolVar(&public, "public", true, "whether the item should be available publicly")
+	flag.BoolVar(&public, "public", false, "whether the item should be available publicly")
 	flag.Parse()
 
 	// If they haven't set the bucket or projectID nor specified

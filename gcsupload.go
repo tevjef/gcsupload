@@ -53,8 +53,8 @@ func main() {
 
 	// If they haven't set the bucket or projectID nor specified
 	// in the environment, then fail if missing.
-	bucket = mustGetEnv("GOLANG_SAMPLES_BUCKET", bucket)
-	projectID = mustGetEnv("GOLANG_SAMPLES_PROJECT_ID", projectID)
+	bucket = mustGetEnv("GCS_BUCKET", bucket)
+	projectID = mustGetEnv("GCS_PROJECT", projectID)
 
 	var r io.Reader
 	if source == "" {
